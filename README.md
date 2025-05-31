@@ -1,1 +1,2 @@
-# Fitpro-Gym
+# This is a FitPro Gym - SQL Basics Project
+
