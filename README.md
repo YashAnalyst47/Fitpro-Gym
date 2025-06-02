@@ -51,7 +51,7 @@ Here’s an overview of the database structure:
 - **check_in_time**: Check-in time of the visit
 - **check_out_time**: Check-out time of the visit
 
-''' SQL
+``` SQL
 -- Create members table
 CREATE TABLE members (
     member_id INT PRIMARY KEY,
@@ -78,7 +78,7 @@ CREATE TABLE visits (
     check_out_time TIME,
     FOREIGN KEY (member_id) REFERENCES members(member_id)
 );
-'''
+```
 
 ## Business Problems
 
