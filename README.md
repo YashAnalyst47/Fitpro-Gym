@@ -102,7 +102,7 @@ Advanced queries:
 8. Members who joined in 2023, grouped by membership type (where each group has > 100 members).
 9. Members with more than 2 visits, sorted by total visits, displaying the top 5. 
 10. Active members grouped by membership type, sorted by total visits.
----
+
 
 ## SQL Queries & Analysis
 
