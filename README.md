@@ -51,6 +51,35 @@ Here’s an overview of the database structure:
 - **check_in_time**: Check-in time of the visit
 - **check_out_time**: Check-out time of the visit
 
+''' SQL
+-- Create members table
+CREATE TABLE members (
+    member_id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
+
+-- Create memberships table
+CREATE TABLE memberships (
+    member_id INT PRIMARY KEY,
+    age INT,
+    gender CHAR(1),
+    membership_type VARCHAR(20),
+    join_date DATE,
+    status VARCHAR(20),
+    FOREIGN KEY (member_id) REFERENCES members(member_id)
+);
+
+-- Create visits table
+CREATE TABLE visits (
+    visit_id INT PRIMARY KEY,
+    member_id INT,
+    visit_date DATE,
+    check_in_time TIME,
+    check_out_time TIME,
+    FOREIGN KEY (member_id) REFERENCES members(member_id)
+);
+'''
+
 ## Business Problems
 
 The following queries were created to solve specific business questions. Each query is designed to provide insights based on gym membership and visit data.
