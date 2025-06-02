@@ -89,24 +89,19 @@ The following queries were created to solve specific business questions. Each qu
 
 1. Retrieve the **name** and **membership_type** of female members.
 2. Find members who have a **Monthly membership** and joined after **2023-11-01**.
-3. List the **name** and **status** of active members over **25**.
-4. Get details of **visits** on a specific date (**2024-01-01**).
-5. List members with a **Quarterly membership** aged between **20 and 30**.
+3. List members with a **Quarterly membership** aged between **20 and 30**.
 
 Additional aggregations and grouping:
-6. Count total visits made by each member.
-7. Count members by membership type (e.g., Monthly, Weekly, Quarterly).
-8. Calculate the average age of members, grouped by membership type.
-9. Total visits for each visit date.
-10. Count members by status (e.g., Active or Cancelled).
+
+4. Count members by membership type (e.g., Monthly, Weekly, Quarterly)and arrange in ascending order.
+5. Calculate the average age of members, grouped by membership type in descending order of age.
+6. Ascertain the total visits for each visit date and list the top 10 days with maximum visits.
 
 Advanced queries:
-11. Top 3 members with the highest visits.
-12. Active Monthly members grouped by membership type, sorted by recent join dates.
-13. Members with more than 2 visits, sorted by total visits, displaying the top 5.
-14. Members who joined in 2023, grouped by membership type (where each group has >1 member).
-15. Average age of active members, grouped by membership type, limited to the top 3 results.
-
+7. Top 3 members with the highest visits.
+8. Members who joined in 2023, grouped by membership type (where each group has > 100 members).
+9. Members with more than 2 visits, sorted by total visits, displaying the top 5. 
+10. Active members grouped by membership type, sorted by total visits.
 ---
 
 ## SQL Queries & Analysis
@@ -125,7 +120,7 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
    git clone https://github.com/YashAnalyst47/Fitpro-Gym
    ```
 2. **Set Up the Database**:
-   - Run the `FitPro_Schemas.sql` script to set up tables and insert sample data.
+   - Run the `FitPro_Schemas.sql` script to set up tables and insert sample data (check the attached CSV files).
 
 3. **Run Queries**:
    - Execute each query in `analysis.sql` to explore and analyze the data.
