@@ -52,6 +52,9 @@ Here’s an overview of the database structure:
 - **check_out_time**: Check-out time of the visit
 
 ``` SQL
+-- Create database
+CREATE DATABASE fitpro_db
+
 -- Create members table
 CREATE TABLE members (
     member_id INT PRIMARY KEY,
