@@ -119,7 +119,7 @@ The `analysis.sql` file contains all SQL queries developed for this project. Eac
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/fitpro-gym-sql-project.git
+   git clone https://github.com/YashAnalyst47/Fitpro-Gym
    ```
 2. **Set Up the Database**:
    - Run the `schema.sql` script to set up tables and insert sample data.
